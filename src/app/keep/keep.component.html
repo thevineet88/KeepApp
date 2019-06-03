@@ -1,0 +1,17 @@
+<!-- <form class="form">
+  <mat-form-field class="full-width">
+    <input matInput placeholder="title" id="title">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <textarea matInput placeholder="Describe"  id="description" ></textarea>
+  </mat-form-field>
+</form> -->
+
+<div>
+<input type='text' #title (keyup.enter)="onEnterTitle(title.value)" placeholder="title" id="title">
+</div>
+<br>
+<div>
+<textarea  #desc (keyup.enter)="onEnterDesc(desc.value)" placeholder="Description" id ="description" ></textarea>
+</div>
